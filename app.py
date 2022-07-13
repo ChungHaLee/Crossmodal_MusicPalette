@@ -41,6 +41,11 @@ def customtimbre():
   return render_template('customtimbre.html')
 
 
+@app.route('/explore', methods=['POST'])
+def exploremusic():
+  return render_template('sheet.html')
+
+
 
   
 
