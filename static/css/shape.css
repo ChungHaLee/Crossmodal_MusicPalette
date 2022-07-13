@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7f5;
+}
+
+
+
+.colorContainer {
+  height: 85%;
+  width: 30%;
+  margin-right: 50px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 20px #dbdbdb;
+}
+
+.paletteBasic {
+  margin-top: 10px;
+  display: flex;
+  height: 10%;
+  width: 100%;
+}
+
+.paletteBasic .color {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: flex 0.1s linear;
+}
+.paletteBasic .color span {
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+.paletteBasic .color:nth-child(1) {
+  background: #264653;
+}
+.paletteBasic .color:nth-child(2) {
+  background: #2a9d8f;
+}
+.paletteBasic .color:nth-child(3) {
+  background: #e9c46a;
+}
+.paletteBasic .color:nth-child(4) {
+  background: #f4a261;
+}
+.paletteBasic .color:nth-child(5) {
+  background: #e76f51;
+}
+.paletteBasic .color:hover {
+  flex: 2;
+}
+.paletteBasic .color:hover span {
+  opacity: 1;
+}
+#stats {
+  height: 14%;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  color: #bebebe;
+}
+#stats svg {
+  fill: #bebebe;
+  transform: scale(1.2);
+}
+
+
+.shapeContainer {
+    box-shadow: 0 10px 20px #dbdbdb;
+    width: 600px;
+    border-radius: 30px;
+    padding: 10px 0px;
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    margin-top: 550px;
+    margin-right: 30px;
+  }
+
+.canvasShape {
+    margin: auto;
+    background-color: black;
+    width: 900px;
+    height: 500px;
+    overflow: auto;
+}
+
+.btn-square-md {
+    margin-left: 50px;
+    width: 60px !important;
+    height: 60px !important;
+    padding: 0px;
+    font-size:12px;
+    clip-path: inset(10% 10% 10% 10%);
+
+}
+
+.btn-circle-md {
+    margin-left: 50px;
+    height: 60px;
+    width: 60px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+
+.btn-triangle-md {
+    margin-left: 50px;
+    width: 60px;
+    height: 60px;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.btn-decagon-md {
+    margin-left: 50px;
+    width: 60px;
+    height: 60px;
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+
+
+.btn-star-md {
+    margin-left: 50px;
+    width: 70px;
+    height: 70px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+
+.circleDraggable {
+    position: absolute;
+    background-color: rgb(191, 191, 191)
+}
+
+#rectangle{
+    width: 100px;
+    height: 100px;
+}
+
+#circle{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+
+ul {
+    float:left;
+    width:48%;
+    list-style-type: none;
+    margin: 0 1% 1.5%;
+    padding: 0;
+    display: block;
+    padding:15px 15px 7px 15px;
+    background:rgba(0,0,0,0.1);
+}
+
+li {
+    display: block;
+    float: left;
+    width: 20%;
+}
+
+ul.x2{
+    width:98%;
+}
+
+ul.x2 li{
+    width:10%;
+}

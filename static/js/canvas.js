@@ -5,7 +5,6 @@ let group, geometry, material;
 let ambientLight, spotLight;
 
 
-
 init();
 
 function init() {
