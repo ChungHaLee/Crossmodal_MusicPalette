@@ -1,4 +1,4 @@
-# VizHap for CHI
+# Cross-modal Music Palette
 Music Enjoyment by Visualization & Haptic patterns for DHH (Deaf and Hard-of-Hearing)
 ### 사용 언어
 - **javascript** 
